@@ -1,11 +1,32 @@
 .banner {
   width: 100%;
   height: 400px;
-  background-image: url("/public/imgs/i1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/public/imgs/i1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   animation: changeBackground 10s infinite;
+}
+
+.banner-container {
+  padding: 15% 0;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 30px;
+  opacity: 0.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes changeBackground {
@@ -13,7 +34,7 @@
     background-image: url("/public/imgs/i1.jpg");
   }
   50% {
-    background-image: url("/public/imgs/banner.jpg");
+    background-image: url("/public/imgs/banner.webp");
   }
   100% {
     background-image: url("/public/imgs/i1.jpg");
