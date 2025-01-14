@@ -1,0 +1,17 @@
+.main-product {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 50px;
+}
+
+@media (max-width: 768px) {
+  .main-product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+  }
+}

@@ -1,6 +1,7 @@
 import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import Product from "../Product/Product";
 import "./Home.css";
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
     <>
       <Navbar />
       <Banner />
-      <div>Conteudo</div>
+      <Product />
       <Footer />
     </>
   );
