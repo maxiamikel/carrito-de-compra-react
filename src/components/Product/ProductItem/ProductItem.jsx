@@ -1,6 +1,6 @@
 import "./ProductItem.css";
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, addProduct }) => {
   const { id, name, description, image, price } = product;
   return (
     <div className="product-card">

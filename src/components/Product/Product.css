@@ -7,6 +7,92 @@
   margin: 50px;
 }
 
+.product-card {
+  width: 32%;
+  height: 550px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.item-image {
+  width: 100%;
+  height: 330px;
+}
+
+.product-details {
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.product-details h1 {
+  font-size: 24px;
+  color: #222;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.product-details p {
+  font-size: 15px;
+  padding: 8px 0;
+  color: #444;
+}
+
+.product-details h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #666;
+}
+
+.product-card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: #fff;
+  background-color: #1bcb7f;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px auto;
+  transition: all;
+}
+
+.product-card button:hover {
+  color: #333;
+  transition-duration: 0.5s;
+}
+
+@media ((min-width: 769px) and (max-width:1024px)) {
+  .product-card {
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;
+    height: 550px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  .product-card button {
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 19px;
+  }
+
+  .item-image {
+    width: 70%;
+    height: 330px;
+  }
+}
+
 @media (max-width: 768px) {
   .main-product {
     display: flex;
