@@ -12,6 +12,11 @@
   background-color: #e1e1e1;
 }
 
+.navbar a {
+  text-decoration: none;
+  color: #666;
+}
+
 .nav-logo {
   justify-self: start;
   margin-left: 20px;
@@ -20,7 +25,6 @@
 
 .nav-logo a {
   text-decoration: none;
-  color: #666;
 }
 
 .nav-cart {

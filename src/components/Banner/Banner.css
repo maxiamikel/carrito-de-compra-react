@@ -31,12 +31,12 @@
 
 @keyframes changeBackground {
   0% {
-    background-image: url("/public/imgs/i1.jpg");
+    background-image: url("/imgs/i1.jpg");
   }
   50% {
-    background-image: url("/public/imgs/banner.webp");
+    background-image: url("/imgs/banner.webp");
   }
   100% {
-    background-image: url("/public/imgs/i1.jpg");
+    background-image: url("/imgs/i1.jpg");
   }
 }
