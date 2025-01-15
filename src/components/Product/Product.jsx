@@ -4,7 +4,7 @@ import { useAppContext } from "../../context/AppContext";
 
 const Product = () => {
   const [products, setProducts] = useState([]);
-  const { cart, setCart } = useAppContext();
+  const { addProductToCart, quantity } = useAppContext();
 
   useEffect(() => {
     fetch("product.json")
@@ -12,9 +12,6 @@ const Product = () => {
       .then((data) => setProducts(data));
   }, []);
 
-  const addProductToCart = (item) => {
-    setCart([...cart, item]);
-  };
   return (
     <div className="main-product">
       {products.map((item) => (
@@ -28,7 +25,7 @@ const Product = () => {
           <button
             type="button"
             onClick={() => {
-              addProductToCart(item);
+              addProductToCart({ ...item, quantity });
             }}
           >
             Adicionar

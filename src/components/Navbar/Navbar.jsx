@@ -12,11 +12,11 @@ const Navbar = () => {
         <h1 className="nav-logo">
           <Link to="/">Shop.</Link>
         </h1>
-        <div>
+        <div className="cart-info">
           <Link to={`${cart.length > 0 ? "/cart" : "/"}`}>
             <IoIosCart className="nav-cart" />
           </Link>
-          {cart.length}
+          <p>{cart.length}</p>
         </div>
       </nav>
     </div>
