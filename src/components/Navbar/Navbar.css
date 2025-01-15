@@ -43,6 +43,8 @@
 .cart-info p {
   margin-left: -20px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 17px;
   color: red;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
