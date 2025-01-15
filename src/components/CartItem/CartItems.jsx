@@ -2,9 +2,36 @@ import { FaMinus, FaPlus, FaTrash } from "react-icons/fa";
 import { useAppContext } from "../../context/AppContext";
 import "./CartItems.css";
 import CalculteTotalCart from "../CalculteTotalCart/CalculteTotalCart";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const CartItems = () => {
-  const { cart, addProductToCart } = useAppContext();
+  const { cart, setCart, addProductToCart } = useAppContext();
+  const navigate = useNavigate();
+
+  const descrementProductQuantityToCart = (product) => {
+    const productToDescrement = cart.find((item) => item.id === product.id);
+    productToDescrement.quantity > 1 &&
+      setCart(
+        cart.map((element) =>
+          element.id === product.id
+            ? { ...product, quantity: productToDescrement.quantity - 1 }
+            : element
+        )
+      );
+  };
+
+  const removeProductFromCart = (id) => {
+    const productToRemove = cart.find((item) => item.id === id);
+    const newCart = cart.filter((element) => element !== productToRemove);
+    setCart(newCart);
+  };
+
+  useEffect(() => {
+    if (cart.length === 0) {
+      navigate("/");
+    }
+  }, [cart]);
 
   return (
     <div className="cart-container">
@@ -28,10 +55,16 @@ const CartItems = () => {
             <button type="bytton" onClick={() => addProductToCart(item)}>
               <FaPlus />
             </button>
-            <button type="bytton" onClick={() => {}}>
+            <button
+              type="bytton"
+              onClick={() => descrementProductQuantityToCart(item)}
+            >
               <FaMinus />
             </button>
-            <button type="bytton" onClick={() => {}}>
+            <button
+              type="bytton"
+              onClick={() => removeProductFromCart(item.id)}
+            >
               <FaTrash />
             </button>
           </div>
