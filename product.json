@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Tênis Esportivo",
+    "description": "Tênis confortável para atividades físicas e uso diário.",
+    "image": "https://cdn.pixabay.com/photo/2023/05/03/22/43/tennis-7968714_1280.png",
+    "price": 1.99
+  },
+  {
+    "id": 2,
+    "name": "Camisa Social",
+    "description": "Camisa social de algodão, ideal para ocasiões formais.",
+    "image": "https://cdn.pixabay.com/photo/2013/07/12/18/22/t-shirt-153366_1280.png",
+    "price": 12.9
+  },
+  {
+    "id": 3,
+    "name": "Relógio Digital",
+    "description": "Relógio com design moderno e funcionalidades avançadas.",
+    "image": "https://cdn.pixabay.com/photo/2012/04/26/18/44/watch-42803_1280.png",
+    "price": 24.9
+  },
+  {
+    "id": 4,
+    "name": "Mochila Escolar",
+    "description": "Mochila resistente com vários compartimentos.",
+    "image": "https://cdn.pixabay.com/photo/2013/07/12/17/58/backpack-152705_1280.png",
+    "price": 9.9
+  },
+  {
+    "id": 5,
+    "name": "Smartphone Android",
+    "description": "Celular com tecnologia avançada e ótima performance.",
+    "image": "https://example.com/images/smartphone-android.jpg",
+    "price": 12.0
+  },
+  {
+    "id": 6,
+    "name": "Fone de Ouvido Bluetooth",
+    "description": "Fone sem fio com excelente qualidade de som.",
+    "image": "https://cdn.pixabay.com/photo/2017/01/31/21/55/android-2027560_1280.png",
+    "price": 1.99
+  },
+  {
+    "id": 7,
+    "name": "Cafeteira Elétrica",
+    "description": "Cafeteira prática e rápida, ideal para o dia a dia.",
+    "image": "https://cdn.pixabay.com/photo/2020/11/23/13/16/coffee-5769721_960_720.png",
+    "price": 2.9
+  },
+  {
+    "id": 8,
+    "name": "Mesa para Computador",
+    "description": "Mesa compacta e funcional para home office.",
+    "image": "https://cdn.pixabay.com/photo/2019/12/14/03/42/office-4694143_1280.png",
+    "price": 3.9
+  },
+  {
+    "id": 9,
+    "name": "Bicicleta Mountain Bike",
+    "description": "Bicicleta ideal para trilhas e terrenos variados.",
+    "image": "https://cdn.pixabay.com/photo/2024/01/26/18/24/student-8534436_960_720.png",
+    "price": 15.0
+  },
+  {
+    "id": 10,
+    "name": "Jaqueta de Couro",
+    "description": "Jaqueta estilosa e confortável para dias frios.",
+    "image": "https://cdn.pixabay.com/photo/2016/04/01/08/37/clothing-1298840_960_720.png",
+    "price": 4.9
+  }
+]
