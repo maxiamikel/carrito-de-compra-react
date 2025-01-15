@@ -4,7 +4,7 @@ import "./CartItems.css";
 import CalculteTotalCart from "../CalculteTotalCart/CalculteTotalCart";
 
 const CartItems = () => {
-  const { cart } = useAppContext();
+  const { cart, addProductToCart } = useAppContext();
 
   return (
     <div className="cart-container">
@@ -25,7 +25,7 @@ const CartItems = () => {
             <p>Sub. Total: {item.price * item.quantity}</p>
           </div>
           <div className="card-controls">
-            <button type="bytton" onClick={() => {}}>
+            <button type="bytton" onClick={() => addProductToCart(item)}>
               <FaPlus />
             </button>
             <button type="bytton" onClick={() => {}}>

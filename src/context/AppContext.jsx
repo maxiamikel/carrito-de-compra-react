@@ -7,8 +7,19 @@ export const AppContext = ({ children }) => {
   const [quantity, setQuantity] = useState(1);
 
   const addProductToCart = ({ image, description, ...product }) => {
-    setCart([...cart, product]);
-    console.log(product);
+    const productExistInCart = cart.find((item) => item.id === product.id);
+    if (productExistInCart) {
+      setCart(
+        cart.map((element) =>
+          element.id === product.id
+            ? { ...product, quantity: productExistInCart.quantity + 1 }
+            : element
+        )
+      );
+    } else {
+      setCart([...cart, product]);
+      console.log(product);
+    }
   };
   return (
     <Context.Provider
