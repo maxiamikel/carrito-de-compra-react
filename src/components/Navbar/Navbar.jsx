@@ -2,8 +2,10 @@ import { IoIosCart } from "react-icons/io";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useAppContext } from "../../context/AppContext";
+
 const Navbar = () => {
   const { cart } = useAppContext();
+
   return (
     <div className="nav-container">
       <nav className="navbar">
@@ -11,7 +13,7 @@ const Navbar = () => {
           <Link to="/">Shop.</Link>
         </h1>
         <div>
-          <Link to="/cart">
+          <Link to={`${cart.length > 0 ? "/cart" : "/"}`}>
             <IoIosCart className="nav-cart" />
           </Link>
           {cart.length}
